@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Kebiasaan Hebat Anak Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        /* Tema Mendung / Cloudy */
+        .gradient-bg {
+            background: linear-gradient(180deg, #5D6D7E 0%, #BFC9CA 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .input-focus:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(93, 109, 126, 0.3);
+            border-color: #5D6D7E;
+            ring-color: #5D6D7E;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+ </head>
+ <body class="h-full bg-slate-100">
+  <div class="min-h-full">
+   
+   <header class="gradient-bg text-white py-8 shadow-lg">
+    <div class="max-w-4xl mx-auto px-4">
+     <h1 class="text-3xl font-bold text-center mb-2 drop-shadow-md">7 Kebiasaan Hebat Anak Indonesia</h1>
+     <p class="text-center text-gray-100 font-medium">Catat kebiasaan hebatmu setiap minggu!</p>
+    </div>
+   </header>
+   
+   <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4">
+     <div class="flex space-x-8">
+      <button class="py-4 px-2 border-b-2 border-gray-600 text-gray-700 font-bold w-1/2"> 
+        📝 Input Kebiasaan 
+      </button> 
+      
+      <a href="https://suanjun-enu.my.canva.site/rekap-data-siswa" target="_blank" class="py-4 px-2 border-b-2 border-transparent text-gray-500 hover:text-gray-800 hover:bg-gray-50 font-medium w-1/2 text-center transition-all"> 
+        📊 Rekap Guru ↗
+      </a>
+     </div>
+    </div>
+   </nav>
+
+   <main class="max-w-4xl mx-auto px-4 py-8">
+    <div id="form-section" class="fade-in">
+     <div class="bg-white rounded-xl card-shadow p-8">
+      <form id="habit-form" class="space-y-6">
+       
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+         <label for="nama-siswa" class="block text-sm font-semibold text-gray-700 mb-2">Nama Siswa</label> 
+         <select id="nama-siswa" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-gray-50"> 
+            <option value="">Pilih nama siswa</option> 
+            <option value="Yudi Fakri">Yudi Fakri</option> 
+            <option value="Zian Arza Febrian">Zian Arza Febrian</option> 
+            <option value="Hurul aini">Hurul aini</option> 
+            <option value="Kevin Gio Trinanda">Kevin Gio Trinanda</option> 
+            <option value="Kezia Indira Fitria Putri">Kezia Indira Fitria Putri</option> 
+            <option value="VICKY EDRIAN">VICKY EDRIAN</option> 
+            <option value="Zahra dwiviztri jelita">Zahra dwiviztri jelita</option> 
+            <option value="Dendi Warman">Dendi Warman</option> 
+            <option value="Sherin Dzakkiyah Asyifa">Sherin Dzakkiyah Asyifa</option> 
+            <option value="yuga yovikri">yuga yovikri</option> 
+            <option value="zahra juliayati">zahra juliayati</option> 
+            <option value="Vandhika Juliandro">Vandhika Juliandro</option> 
+            <option value="Bangkit Sanjaya">Bangkit Sanjaya</option> 
+            <option value="M Nafulah Azril Pratama">M Nafulah Azril Pratama</option> 
+            <option value="Reski Balman Maulana">Reski Balman Maulana</option> 
+            <option value="RAFFA ISWARET SAPUTRA">RAFFA ISWARET SAPUTRA</option> 
+         </select>
+        </div>
+        <div>
+         <label for="kelas-siswa" class="block text-sm font-semibold text-gray-700 mb-2">Kelas</label> 
+         <select id="kelas-siswa" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-gray-50"> 
+            <option value="">Pilih kelas</option> 
+            <option value="FL.04">FL.04</option> 
+            <option value="F.01">F.01</option> 
+            <option value="F.10">F.10</option> 
+            <option value="F.11">F.11</option> 
+            <option value="E.9">E.9</option> 
+            <option value="E.11">E.11</option> 
+            <option value="E.13">E.13</option> 
+            <option value="E.3">E.3</option> 
+            <option value="E.5">E.5</option> 
+         </select>
+        </div>
+       </div>
+
+       <div>
+        <label for="tanggal-mulai" class="block text-sm font-semibold text-gray-700 mb-2">Tanggal Mulai Minggu</label> 
+        <input type="date" id="tanggal-mulai" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-gray-50">
+       </div>
+       
+       <div class="bg-gradient-to-r from-gray-200 to-slate-200 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">☁️ 1. Bangun Pagi</h3>
+        <label for="bangun-pagi" class="block text-sm font-medium text-gray-700 mb-2">Jam bangun pagi rata-rata minggu ini:</label> 
+        <select id="bangun-pagi" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-white/80"> 
+            <option value="">Pilih jam bangun</option> 
+            <option value="04:00">04:00</option> 
+            <option value="04:30">04:30</option> 
+            <option value="05:00">05:00</option> 
+            <option value="05:30">05:30</option> 
+            <option value="06:00">06:00</option> 
+            <option value="06:30">06:30</option> 
+            <option value="07:00">07:00</option> 
+        </select>
+       </div>
+
+       <div class="bg-gradient-to-r from-slate-100 to-gray-200 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">🕌 2. Sholat 5 Waktu</h3>
+        <label for="sholat-5-waktu" class="block text-sm font-medium text-gray-700 mb-2">Jumlah sholat 5 waktu minggu ini (maksimal 35):</label> 
+        <input type="number" id="sholat-5-waktu" min="0" max="35" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-white/80" placeholder="0-35">
+       </div>
+
+       <div class="bg-gradient-to-r from-zinc-100 to-stone-200 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">🤲 3. Ibadah Lainnya</h3>
+        <p class="text-sm text-gray-600 mb-4">Pilih ibadah yang kamu lakukan minggu ini (bisa lebih dari satu):</p>
+        <div class="space-y-4">
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="space-y-3">
+           <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="ibadah-checkbox" value="Sholat Dhuha" class="form-checkbox h-5 w-5 text-gray-600"> <span class="text-sm font-medium">Sholat Dhuha</span> </label> 
+           <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="ibadah-checkbox" value="Sholat Tahajud" class="form-checkbox h-5 w-5 text-gray-600"> <span class="text-sm font-medium">Sholat Tahajud</span> </label> 
+           <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="ibadah-checkbox" value="Puasa Sunnah" class="form-checkbox h-5 w-5 text-gray-600"> <span class="text-sm font-medium">Puasa Sunnah</span> </label>
+          </div>
+          <div class="space-y-3">
+           <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="ibadah-checkbox" value="Sedekah" class="form-checkbox h-5 w-5 text-gray-600"> <span class="text-sm font-medium">Sedekah</span> </label> 
+           <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="ibadah-checkbox" value="Membaca Al-Quran" class="form-checkbox h-5 w-5 text-gray-600"> <span class="text-sm font-medium">Membaca Al-Quran</span> </label>
+          </div>
+         </div>
+         <div id="ibadah-details" class="space-y-3 hidden"></div>
+        </div>
+       </div>
+
+       <div class="bg-gradient-to-r from-neutral-100 to-gray-200 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">🥗 4. Makanan Bergizi</h3>
+        <label for="makanan-bergizi" class="block text-sm font-medium text-gray-700 mb-2">Jumlah makan bergizi minggu ini (maksimal 14, 2x sehari):</label> 
+        <input type="number" id="makanan-bergizi" min="0" max="14" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-white/80" placeholder="0-14">
+       </div>
+
+       <div class="bg-gradient-to-r from-slate-200 to-gray-300 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">🏃 5. Olahraga</h3>
+        <p class="text-sm text-gray-600 mb-4">Pilih olahraga yang kamu lakukan minggu ini (bisa lebih dari satu):</p>
+        <div class="space-y-4">
+         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Lari" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Lari</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Sepak Bola" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Sepak Bola</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Badminton" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Badminton</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Basket" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Basket</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Voli" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Voli</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Renang" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Renang</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Senam" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Senam</span> </label> 
+          <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 cursor-pointer bg-white/60"> <input type="checkbox" class="olahraga-checkbox" value="Bersepeda" class="form-checkbox h-4 w-4 text-gray-600"> <span class="text-sm font-medium">Bersepeda</span> </label>
+         </div>
+         <div id="olahraga-details" class="space-y-3 hidden"></div>
+        </div>
+       </div>
+
+       <div class="bg-gradient-to-r from-stone-100 to-zinc-200 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">📚 6. Belajar di Rumah</h3>
+        <label for="belajar-rumah" class="block text-sm font-medium text-gray-700 mb-2">Total menit belajar di luar jam sekolah minggu ini:</label> 
+        <input type="number" id="belajar-rumah" min="0" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-white/80" placeholder="Total menit belajar">
+       </div>
+
+       <div class="bg-gradient-to-r from-gray-100 to-gray-200 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">🤝 7. Bermasyarakat</h3>
+        <div class="space-y-4">
+         <div>
+          <label for="kegiatan-masyarakat" class="block text-sm font-medium text-gray-700 mb-2">Kegiatan masyarakat minggu ini:</label> 
+          <textarea id="kegiatan-masyarakat" rows="3" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus resize-none bg-white/80" placeholder="Ceritakan kegiatan bermasyarakat yang kamu lakukan..."></textarea>
+         </div>
+         <div>
+          <label for="rata-tidur" class="block text-sm font-medium text-gray-700 mb-2">Rata-rata jam tidur malam:</label> 
+          <select id="rata-tidur" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus bg-white/80"> 
+            <option value="">Pilih jam tidur</option> 
+            <option value="20:00">20:00</option> 
+            <option value="20:30">20:30</option> 
+            <option value="21:00">21:00</option> 
+            <option value="21:30">21:30</option> 
+            <option value="22:00">22:00</option> 
+            <option value="22:30">22:30</option> 
+            <option value="23:00">23:00</option> 
+            <option value="23:30">23:30</option> 
+          </select>
+         </div>
+        </div>
+       </div>
+
+       <div class="bg-gradient-to-r from-gray-50 to-slate-100 p-6 rounded-lg border border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">💭 Curhat</h3>
+        <label for="curhat" class="block text-sm font-medium text-gray-700 mb-2">Ada yang ingin diceritakan? (akademik, keluarga, atau lainnya)</label> 
+        <textarea id="curhat" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 input-focus resize-none bg-white/80" placeholder="Ceritakan apa yang ada di hatimu... (opsional)"></textarea>
+       </div>
+
+       <div class="text-center pt-6">
+        <button type="submit" id="submit-btn" class="bg-gradient-to-r from-gray-600 to-slate-700 text-white px-8 py-4 rounded-lg font-semibold text-lg btn-hover transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"> 
+            <span id="submit-text">💾 Simpan Kebiasaan Hebat</span> 
+            <span id="loading-text" class="hidden">⏳ Menyimpan...</span> 
+        </button>
+       </div>
+      </form>
+     </div>
+    </div>
+   </main>
+  </div>
+  <script>
+        // ==========================================
+        // GANTI URL DI BAWAH INI DENGAN URL WEB APP GOOGLE SCRIPT ANDA
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby5YTjB_JGuhr4SEahlnjIRPQuvqtPBFVp_J_-X96X-rurdGvvd0lZ7MWxNPS0JpaeNcw/exec"; 
+        // ==========================================
+
+        // Handle dynamic inputs (Ibadah & Olahraga)
+        document.addEventListener('change', (e) => {
+            if (e.target.classList.contains('ibadah-checkbox')) updateIbadahInputs();
+            if (e.target.classList.contains('olahraga-checkbox')) updateOlahragaInputs();
+        });
+
+        function updateIbadahInputs() {
+            const checkedBoxes = document.querySelectorAll('.ibadah-checkbox:checked');
+            const detailsDiv = document.getElementById('ibadah-details');
+            
+            if (checkedBoxes.length > 0) {
+                detailsDiv.classList.remove('hidden');
+                detailsDiv.innerHTML = '';
+                checkedBoxes.forEach(checkbox => {
+                    const ibadahName = checkbox.value;
+                    const inputDiv = document.createElement('div');
+                    inputDiv.className = 'flex items-center space-x-4 p-3 bg-white rounded-lg border';
+                    inputDiv.innerHTML = `
+                        <span class="text-sm font-medium text-gray-700 min-w-0 flex-1">${ibadahName}:</span>
+                        <input type="number" class="ibadah-count w-24 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-500" data-ibadah="${ibadahName}" min="0" max="7" placeholder="0-7" required>
+                        <span class="text-xs text-gray-500">kali</span>`;
+                    detailsDiv.appendChild(inputDiv);
+                });
+            } else {
+                detailsDiv.classList.add('hidden');
+            }
+        }
+
+        function updateOlahragaInputs() {
+            const checkedBoxes = document.querySelectorAll('.olahraga-checkbox:checked');
+            const detailsDiv = document.getElementById('olahraga-details');
+            
+            if (checkedBoxes.length > 0) {
+                detailsDiv.classList.remove('hidden');
+                detailsDiv.innerHTML = '';
+                checkedBoxes.forEach(checkbox => {
+                    const olahragaName = checkbox.value;
+                    const inputDiv = document.createElement('div');
+                    inputDiv.className = 'flex items-center space-x-4 p-3 bg-white rounded-lg border';
+                    inputDiv.innerHTML = `
+                        <span class="text-sm font-medium text-gray-700 min-w-0 flex-1">${olahragaName}:</span>
+                        <input type="number" class="olahraga-duration w-24 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-500" data-olahraga="${olahragaName}" min="0" placeholder="menit" required>
+                        <span class="text-xs text-gray-500">menit</span>`;
+                    detailsDiv.appendChild(inputDiv);
+                });
+            } else {
+                detailsDiv.classList.add('hidden');
+            }
+        }
+
+        // Form Submission ke Google Sheet (Mode no-cors agar notifikasi sukses)
+        document.getElementById('habit-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            if (!SCRIPT_URL || SCRIPT_URL.includes("MASUKKAN_URL")) {
+                showMessage('URL Google Script belum diatur! Hubungi Guru.', 'error');
+                return;
+            }
+
+            const checkedIbadah = document.querySelectorAll('.ibadah-checkbox:checked');
+            const checkedOlahraga = document.querySelectorAll('.olahraga-checkbox:checked');
+            if (checkedIbadah.length === 0) { showMessage('Pilih minimal satu ibadah!', 'error'); return; }
+            if (checkedOlahraga.length === 0) { showMessage('Pilih minimal satu olahraga!', 'error'); return; }
+
+            const submitBtn = document.getElementById('submit-btn');
+            const submitText = document.getElementById('submit-text');
+            const loadingText = document.getElementById('loading-text');
+
+            submitBtn.disabled = true;
+            submitText.classList.add('hidden');
+            loadingText.classList.remove('hidden');
+
+            const ibadahData = [];
+            document.querySelectorAll('.ibadah-count').forEach(input => {
+                if (parseInt(input.value) > 0) ibadahData.push(`${input.dataset.ibadah}: ${input.value}x`);
+            });
+
+            const olahragaData = [];
+            document.querySelectorAll('.olahraga-duration').forEach(input => {
+                if (parseInt(input.value) > 0) olahragaData.push(`${input.dataset.olahraga}: ${input.value}m`);
+            });
+
+            const formData = {
+                nama_siswa: document.getElementById('nama-siswa').value,
+                kelas_siswa: document.getElementById('kelas-siswa').value,
+                tanggal_mulai: document.getElementById('tanggal-mulai').value,
+                bangun_pagi: document.getElementById('bangun-pagi').value,
+                sholat_5_waktu: parseInt(document.getElementById('sholat-5-waktu').value),
+                ibadah_data: ibadahData.join(', '),
+                makanan_bergizi: parseInt(document.getElementById('makanan-bergizi').value),
+                olahraga_data: olahragaData.join(', '),
+                belajar_rumah: parseInt(document.getElementById('belajar-rumah').value),
+                kegiatan_masyarakat: document.getElementById('kegiatan-masyarakat').value,
+                rata_tidur: document.getElementById('rata-tidur').value,
+                curhat: document.getElementById('curhat').value
+            };
+
+            try {
+                // Mode no-cors agar browser tidak memblokir respon
+                await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                showMessage('Kebiasaan hebat berhasil disimpan! 🎉', 'success');
+                document.getElementById('habit-form').reset();
+                document.getElementById('ibadah-details').classList.add('hidden');
+                document.getElementById('olahraga-details').classList.add('hidden');
+                
+            } catch (error) {
+                console.error(error);
+                showMessage('Gagal koneksi internet. Coba lagi.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitText.classList.remove('hidden');
+                loadingText.classList.add('hidden');
+            }
+        });
+
+        function showMessage(message, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `fixed top-4 right-4 px-6 py-3 rounded-lg text-white font-medium z-50 ${type === 'success' ? 'bg-gray-600' : 'bg-red-500'}`;
+            messageDiv.textContent = message;
+            document.body.appendChild(messageDiv);
+            setTimeout(() => messageDiv.remove(), 3000);
+        }
+    </script>
+ </body>
+</html>

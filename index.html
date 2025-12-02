@@ -257,6 +257,7 @@
                 });
             } else {
                 detailsDiv.classList.add('hidden');
+                detailsDiv.innerHTML = ''; // PENTING: Hapus input agar tidak error "hidden required field"
             }
         }
 
@@ -279,6 +280,7 @@
                 });
             } else {
                 detailsDiv.classList.add('hidden');
+                detailsDiv.innerHTML = ''; // PENTING: Hapus input agar tidak error "hidden required field"
             }
         }
 
@@ -290,9 +292,6 @@
                 showMessage('URL Google Script belum diatur! Hubungi Guru.', 'error');
                 return;
             }
-
-            // KITA HAPUS VALIDASI WAJIB UNTUK IBADAH DAN OLAHRAGA DI SINI
-            // (Kode pengecekan length === 0 dihapus)
 
             const submitBtn = document.getElementById('submit-btn');
             const submitText = document.getElementById('submit-text');
@@ -318,9 +317,9 @@
                 tanggal_mulai: document.getElementById('tanggal-mulai').value,
                 bangun_pagi: document.getElementById('bangun-pagi').value,
                 sholat_5_waktu: parseInt(document.getElementById('sholat-5-waktu').value),
-                ibadah_data: ibadahData.join(', '), // Jika kosong, akan mengirim string kosong (tidak error)
+                ibadah_data: ibadahData.join(', '), 
                 makanan_bergizi: parseInt(document.getElementById('makanan-bergizi').value),
-                olahraga_data: olahragaData.join(', '), // Jika kosong, akan mengirim string kosong
+                olahraga_data: olahragaData.join(', '), 
                 belajar_rumah: parseInt(document.getElementById('belajar-rumah').value),
                 kegiatan_masyarakat: document.getElementById('kegiatan-masyarakat').value,
                 rata_tidur: document.getElementById('rata-tidur').value,
